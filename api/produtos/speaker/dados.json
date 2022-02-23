@@ -1,0 +1,25 @@
+{
+  "id": "Speaker",
+  "nome": "speaker",
+  "preco": 2999,
+  "img": "./api/produtos/speaker/speaker.jpg",
+  "avaliacao": [
+    {
+      "nome": "Fabio",
+      "estrelas": 5,
+      "descricacao": "Caralho é o famoso soco do hulk e a marretada do tyson"
+    },
+    {
+      "nome": "Nathalia",
+      "estrelas": 3,
+      "descricacao": "mano é bem mais ou menos viu"
+    },
+    {
+      "nome": "Pedrin",
+      "estrelas": 5,
+      "descricacao": "o é bem bacana esse trampinho viu"
+    }
+
+
+  ]
+}

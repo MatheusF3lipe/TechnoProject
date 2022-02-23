@@ -1,0 +1,25 @@
+{
+  "id": "Smartphone",
+  "nome": "smartphone",
+  "preco": 2999,
+  "img": "./api/produtos/smartphone/smartphone.jpg",
+  "avaliacao": [
+    {
+      "nome": "Cleber",
+      "estrelas": 5,
+      "descricacao": "Caralho é o famoso soco do hulk e a marretada do tyson"
+    },
+    {
+      "nome": "Leticia",
+      "estrelas": 3,
+      "descricacao": "mano é bem mais ou menos viu"
+    },
+    {
+      "nome": "Romario",
+      "estrelas": 5,
+      "descricacao": "o é bem bacana esse trampinho viu"
+    }
+
+
+  ]
+}
