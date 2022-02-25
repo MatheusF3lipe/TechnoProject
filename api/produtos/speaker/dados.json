@@ -1,25 +1,20 @@
 {
-  "id": "Speaker",
-  "nome": "speaker",
-  "preco": 2999,
-  "img": "./api/produtos/speaker/speaker.jpg",
-  "avaliacao": [
+  "id": "speaker",
+  "nome": "Speaker",
+  "preco": 599,
+  "descricao": "Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se a necessidade de renovação processual causa impacto indireto na reavaliação do orçamento setorial.",
+  "estoque": 3,
+  "img": "./api/produtos/speaker/speaker-foto.jpg",
+  "reviews": [
     {
-      "nome": "Fabio",
+      "nome": "Rogério",
       "estrelas": 5,
-      "descricacao": "Caralho é o famoso soco do hulk e a marretada do tyson"
+      "descricao": "Gostei muito do produto, atendeu todas as minhas necessidades."
     },
     {
-      "nome": "Nathalia",
-      "estrelas": 3,
-      "descricacao": "mano é bem mais ou menos viu"
-    },
-    {
-      "nome": "Pedrin",
-      "estrelas": 5,
-      "descricacao": "o é bem bacana esse trampinho viu"
+      "nome": "Nathália",
+      "estrelas": 4,
+      "descricao": "Gostei, mas o preço poderia ser melhor."
     }
-
-
   ]
 }

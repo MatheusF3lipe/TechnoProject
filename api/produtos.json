@@ -8,25 +8,25 @@
   {
     "id": "smartphone",
     "nome": "Smartphone",
-    "preco": 1400,
-    "img": "./api/produtos/celulares/celular.jpg"
+    "preco": 1299,
+    "img": "./api/produtos/smartphone/smartphone.jpg"
   },
-    {
-      "id": "tablet",
-      "nome": "Tablet",
-      "preco": 900,
-      "img": "./api/produtos/tablet/tablet.jpg"
-    },
-    {
-      "id": "smartwatch",
-      "nome": "Smartwatch",
-      "preco": 1100,
-      "img": "./api/produtos/smartwatch/notebook.jpg"
-    },
-    {
-      "id": "speaker",
-      "nome": "Speaker",
-      "preco": 890,
-      "img": "./api/produtos/speaker/notebook.jpg"
-    }
+  {
+    "id": "tablet",
+    "nome": "Tablet",
+    "preco": 899,
+    "img": "./api/produtos/tablet/tablet.jpg"
+  },
+  {
+    "id": "smartwatch",
+    "nome": "Smartwatch",
+    "preco": 1199,
+    "img": "./api/produtos/smartwatch/smartwatch.jpg"
+  },
+  {
+    "id": "speaker",
+    "nome": "Speaker",
+    "preco": 599,
+    "img": "./api/produtos/speaker/speaker.jpg"
+  }
 ]
