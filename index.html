@@ -13,13 +13,21 @@
 
 <body>
   <div id="app">
+
+    <section class="modal">{{produto}}</section>
+
     <section class="produtos">
-      <div v-for="produto in produtos">
+      <div v-for="produto in produtos" 
+      class="produto" 
+      @click="renderproduct(produto.id)">
+      
         <img :src="produto.img" :alt="produto.nome" :key="produto.id" class="produto_img" />
+
         <div class="produto_info">
-          <span class="produto_preco">{{produto.preco}}</span>
+          <span class="produto_preco">{{produto.preco | numbersforPrice}}</span>
           <h2 class="produto_nome">{{produto.nome}}</h2>
         </div>
+
     </section>
   </div>
   <script src="/app.js"></script>
