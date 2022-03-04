@@ -23,6 +23,10 @@ const vm = new Vue({
       then(r => {
         this.produto = r
       })
+    },
+    closeModal({ target, currentTarget }) {
+      if(currentTarget === target) 
+      this.produto = false
     }
   },
   created() {
