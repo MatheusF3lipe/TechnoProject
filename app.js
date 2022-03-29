@@ -6,6 +6,7 @@ const vm = new Vue({
     compras: [],
     mensagem: '',
     alertaAtivo: false,
+    carrinhoAtivo: false
   },
   filters: {
     numbersforPrice(valor) {
@@ -49,6 +50,10 @@ const vm = new Vue({
       if(currentTarget === target) 
       this.produto = false
     },
+    closeCarrinho({target, currentTarget}) {
+      if(currentTarget === target)
+      this.carrinhoAtivo = false
+    }, 
     pushProduct() {
     this.produto.estoque--
     const {id,preco,nome} = this.produto
@@ -70,16 +75,42 @@ const vm = new Vue({
       setTimeout(() => {
         this.alertaAtivo = false
       }, 1500)
+    },
+    router() {
+      const hash = document.location.hash
+      console.log(hash)
+      if(hash) {
+      this.renderproduct(hash.replace('#',''))
+      }
+    },
+    compararEstoque() {
+     const itens = this.compras.filter(item => {
+        console.log(item)
+        if(item.id === this.produto.id) {
+          return true
+        }
+      })
+      this.produto.estoque = this.produto.estoque - itens.length
+      console.log(itens)
     }
 },
   created() {
     this.renderProducts();
     this.checkarValorLocalStorage();
+    this.router()
   },
   watch: {
     carrinho () {
       window.localStorage.compras = JSON.stringify(this.compras)
       console.log('Adicionou algo ao localStorage')
+    },
+    produto() {
+      document.title = this.produto.nome || "Techno Project"
+      const hash = this.produto.id || ''
+      history.pushState(null, null, `#${hash}`)
+      if(this.produto)  {
+      this.compararEstoque()
+      }
     }
   }
 })
